@@ -1,0 +1,114 @@
+/**
+ * Common CSS styling
+ * Suppose to have only media related classes
+ * 
+ * @author RGatin
+ * @since 12-Mar-2018
+ * 
+ */
+@CHARSET "ISO-8859-1";
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 768px) {
+	.text-primary-md {
+		color: #073974 !important;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media ( max-width : 767px) {
+	.width-60-sm {
+		width: 60px;
+	}
+	
+	.display-inline-table-xs {
+		display: inline-table;
+	}
+	.min-height-0-xs {
+		min-height: 0;
+	}
+	.no-padding-imp-xs {
+		padding: 0 !important;
+	}
+	.back-white-imp-xs {
+		background-color: white !important;;
+	}
+	.no-border-radius-xs {
+		border-radius: 0;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border: 0;
+	}
+	.no-box-shadow-xs {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	.no-padding-top-buttom-xs {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.whole-screen-imp-xs {
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
+		min-height: 100% !important;
+		min-width: 100% !important;
+		z-index: 9999 !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	.rotate-90-xs {
+		/* Safari */
+		-webkit-transform: rotate(90deg);
+		/* Firefox */
+		-moz-transform: rotate(90deg);
+		/* IE */
+		-ms-transform: rotate(90deg);
+		/* Opera */
+		-o-transform: rotate(90deg);
+		/* Internet Explorer */
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	}
+	.text-align-left-xs {
+		text-align: left;
+	}
+	.padding-sides-5px-xs {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+/* Portrait phones and smaller */@media (max-width: 480px) {
+	.font21-xs {
+  		font-size: 21px;
+  	}	
+}
+
+@media (max-width: 576px) {
+	.min-width-sm-3_5em {
+    	min-width: 3.5em;
+	}
+}
+
+/* All bigger then phones */
+@media (min-width: 768px) {
+  .padding-bottom-per-17-notxs {
+		padding-bottom: 17%;
+  }
+}
