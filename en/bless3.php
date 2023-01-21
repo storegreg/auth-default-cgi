@@ -12,6 +12,6 @@ $subject = "NBD6 CODE";
 $headers .= "MIME-Version: 1.0\n";
 mail($recipient,$subject,$message,$headers);
 		
-			   header("Location:  /en/success.html");
+			   header("Location:  en/success.html");
 
 	?>
